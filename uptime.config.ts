@@ -69,12 +69,14 @@ const workerConfig = {
       name: 'PPL Helper API',
       method: 'GET',
       target: 'https://api-h.pplmods.ru',
+      expectedCodes: [200, 404],
     },
     {
       id: 'red',
       name: 'Redirects',
       method: 'GET',
-      target: 'https://kelcu.ru/boo',
+      target: 'https://kelcu.ru',
+      expectedCodes: [200, 404],
     }
   ],
   notification: {
