@@ -38,7 +38,7 @@ const workerConfig = {
       id: 'repo',
       name: 'Maven Repository',
       method: 'GET',
-      target: 'https://repo.kelcuprum.ru/#',
+      target: 'https://maven.kelcu.ru/#',
     },
     {
       id: 'waterplayer',
@@ -53,22 +53,16 @@ const workerConfig = {
       target: 'https://wplayer.ru',
     },
     {
-      id: 'pplmods',
-      name: 'PPL Mods',
-      method: 'GET',
-      target: 'https://pplmods.ru',
-    },
-    {
       id: 'pplhelper',
       name: 'PPL Helper Site',
       method: 'GET',
-      target: 'https://h.pplmods.ru',
+      target: 'https://pplh.ru',
     },
     {
       id: 'pplhelper-api',
       name: 'PPL Helper API',
       method: 'GET',
-      target: 'https://api-h.pplmods.ru',
+      target: 'https://api.pplh.ru',
       expectedCodes: [200, 404],
     },
     {
@@ -76,6 +70,13 @@ const workerConfig = {
       name: 'Redirects',
       method: 'GET',
       target: 'https://kelcu.ru',
+      expectedCodes: [200, 404],
+    },
+    {
+      id: 'clovi',
+      name: 'Clovi',
+      method: 'GET',
+      target: 'https://clovi.art',
       expectedCodes: [200, 404],
     }
   ],
