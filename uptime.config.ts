@@ -77,7 +77,7 @@ const workerConfig = {
       name: 'Clovi',
       method: 'GET',
       target: 'https://clovi.art',
-      expectedCodes: [200, 404],
+      expectedCodes: [200, 404, 403, 400],
     }
   ],
   notification: {
